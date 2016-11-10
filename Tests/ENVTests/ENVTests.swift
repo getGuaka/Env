@@ -1,35 +1,32 @@
 import Foundation
 import XCTest
-import Quick
-import Nimble
 @testable import ENV
 
 
 class ENVTests2: XCTestCase {
   func testItReturnsNilWhenEnvISNotFound() {
-    expect(Env.get("AAAAA"))
-      .to(beNil())
+    XCTAssertNil(Env.get("AAAAA"))
   }
   
   func testItReadEnvVaes() {
     Env.set("SomeKey", "SomeValue")
-    expect(Env.get("SomeKey")).to(equal("SomeValue"))
+    XCTAssertEqual(Env.get("SomeKey"), "SomeValue")
   }
   
   func testItClearsKeyWhenNillIsPassed() {
     Env.set("SomeKey", "SomeValue")
-    expect(Env.get("SomeKey")).to(equal("SomeValue"))
+    XCTAssertEqual(Env.get("SomeKey"), "SomeValue")
     
     Env.set("SomeKey", nil)
-    expect(Env.get("SomeKey")).to(beNil())
+    XCTAssertEqual(Env.get("SomeKey"), nil)
   }
   
   func testItClearsAllEnvVars() {
     Env.set("SomeKey", "SomeValue")
-    expect(Env.get("SomeKey")).to(equal("SomeValue"))
+    XCTAssertEqual(Env.get("SomeKey"), "SomeValue")
     
     Env.clear()
-    XCTAssertNil(Env.get("SomeKey"))
+    XCTAssertEqual(Env.get("SomeKey"), nil)
   }
   
   func testItReturnsAllKeys() {
@@ -37,8 +34,8 @@ class ENVTests2: XCTestCase {
     Env.set("key1", "value1")
     Env.set("key2", "value2")
     
-    expect(Env.keys.contains("key1")).to(beTrue())
-    expect(Env.keys.contains("key2")).to(beTrue())
+    XCTAssertTrue(Env.keys.contains("key1"))
+    XCTAssertTrue(Env.keys.contains("key2"))
    
     Env.clear()
     
@@ -50,24 +47,24 @@ class ENVTests2: XCTestCase {
     Env.set("key1", "value1")
     Env.set("key2", "value2")
     
-    expect(Env.keys.contains("key1")).to(beTrue())
-    expect(Env.keys.contains("key2")).to(beTrue())
+    XCTAssertTrue(Env.keys.contains("key1"))
+    XCTAssertTrue(Env.keys.contains("key2"))
   }
   
   func testItChecksIfKeyExists() {
     Env.set("key1", "value1")
-    expect(Env.hasKey("key1")).to(beTrue())
+    XCTAssertTrue(Env.hasKey("key1"))
     
     Env.clear()
-    expect(Env.hasKey("key1")).to(beFalse())
+    XCTAssertFalse(Env.hasKey("key1"))
   }
   
   func testItChecksIfValueExists() {
     Env.set("key1", "value1")
-    expect(Env.hasValue("value1")).to(beTrue())
+    XCTAssertTrue(Env.hasValue("value1"))
     
     Env.clear()
-    expect(Env.hasValue("value1")).to(beFalse())
+    XCTAssertFalse(Env.hasValue("value1"))
   }
   
   func testItEnumerateKeysAndValues() {
@@ -76,8 +73,8 @@ class ENVTests2: XCTestCase {
     Env.set("key2", "value2")
     
     Env.eachPair {
-      expect(["key1", "key2"]).to(contain($0))
-      expect(["value1", "value2"]).to(contain($1))
+      XCTAssertTrue(["key1", "key2"].contains($0))
+      XCTAssertTrue(["value1", "value2"].contains($1))
     }
   }
 }

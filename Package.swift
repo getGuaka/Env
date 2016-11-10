@@ -5,8 +5,5 @@ let package = Package(
     targets: [
       Target(name:"Environ"),
       Target(name:"ENV", dependencies: ["Environ"]),
-    ],
-    dependencies: [
-      .Package(url: "https://github.com/Quick/Quick.git", majorVersion: 0),
     ]
 )
