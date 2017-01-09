@@ -1,9 +1,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "ENV",
+    name: "Env",
     targets: [
       Target(name:"Environ"),
-      Target(name:"ENV", dependencies: ["Environ"]),
+      Target(name:"Env", dependencies: ["Environ"]),
     ]
 )

@@ -1,6 +1,6 @@
 import Foundation
 import XCTest
-@testable import ENV
+@testable import Env
 
 
 class ENVTests2: XCTestCase {

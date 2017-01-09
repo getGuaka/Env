@@ -1,15 +1,17 @@
-# ENV
+# Env
 
-[![Build Status](https://travis-ci.org/oarrabi/ENV.svg?branch=master)](https://travis-ci.org/oarrabi/ENV)
-[![codecov](https://codecov.io/gh/oarrabi/ENV/branch/master/graph/badge.svg)](https://codecov.io/gh/oarrabi/ENV)
-[![Platform](https://img.shields.io/badge/platform-osx-lightgrey.svg)](https://travis-ci.org/oarrabi/ENV)
-[![Language: Swift](https://img.shields.io/badge/language-swift-orange.svg)](https://travis-ci.org/oarrabi/ENV)
+[![Build Status](https://travis-ci.org/oarrabi/Env.svg?branch=master)](https://travis-ci.org/oarrabi/Env)
+[![codecov](https://codecov.io/gh/oarrabi/Env/branch/master/graph/badge.svg)](https://codecov.io/gh/oarrabi/Env)
+[![Platform](https://img.shields.io/badge/platform-osx-lightgrey.svg)](https://travis-ci.org/oarrabi/Env)
+[![Language: Swift](https://img.shields.io/badge/language-swift-orange.svg)](https://travis-ci.org/oarrabi/Env)
 [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
 ## Why?
 
-If you are developing cross platform command line apps, you need an easy way to interact with the Environment variables. `ENV` provides just that
+If you are developing cross platform command line apps, you need an easy way to interact with the Environment variables. `Env` provides just that.
+
+You can use `Env` with [Guaka](https://github.com/oarrabi/Env) to create aweseome command line applications.
 
 ## Usage
 
@@ -29,26 +31,26 @@ Env.values()
 ```
 
 ## Installation
-You can install ENV using Swift package manager (SPM) and carthage
+You can install Env using Swift package manager (SPM) and carthage
 
 ### Swift Package Manager
-Add ENV as dependency in your `Package.swift`
+Add Env as dependency in your `Package.swift`
 
 ```
   import PackageDescription
 
   let package = Package(name: "YourPackage",
     dependencies: [
-      .Package(url: "https://github.com/oarrabi/ENV.git", majorVersion: 0),
+      .Package(url: "https://github.com/oarrabi/Env.git", majorVersion: 0),
     ]
   )
 ```
 
 ### Carthage
-    github 'oarrabi/ENV'
+    github 'oarrabi/Env'
 
 ## Tests
-Tests can be found [here](https://github.com/oarrabi/ENV/tree/master/Tests).
+Tests can be found [here](https://github.com/oarrabi/Env/tree/master/Tests).
 
 Run them with
 ```
