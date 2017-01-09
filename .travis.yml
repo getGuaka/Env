@@ -4,7 +4,7 @@ osx_image: xcode8
 
 script:
 - swift package generate-xcodeproj --enable-code-coverage
-- xcodebuild -project ENV.xcodeproj -scheme ENV test
+- xcodebuild -project Env.xcodeproj -scheme Env test
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
