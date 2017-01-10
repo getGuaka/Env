@@ -1,6 +1,6 @@
 import XCTest
-@testable import Guaka_envTests
+@testable import EnvTests
 
 XCTMain([
-     testCase(Guaka_envTests.allTests),
+     testCase(EnvTests.allTests),
 ])
