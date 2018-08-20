@@ -1,25 +1,25 @@
 # Env
 
-[![Build Status](https://travis-ci.org/oarrabi/Env.svg?branch=master)](https://travis-ci.org/oarrabi/Env)
-[![codecov](https://codecov.io/gh/oarrabi/Env/branch/master/graph/badge.svg)](https://codecov.io/gh/oarrabi/Env)
-[![Platform](https://img.shields.io/badge/platform-osx-lightgrey.svg)](https://travis-ci.org/oarrabi/Env)
-[![Language: Swift](https://img.shields.io/badge/language-swift-orange.svg)](https://travis-ci.org/oarrabi/Env)
+[![Build Status](https://travis-ci.org/getGuaka/Env.svg?branch=master)](https://travis-ci.org/getGuaka/Env)
+[![codecov](https://codecov.io/gh/getGuaka/Env/branch/master/graph/badge.svg)](https://codecov.io/gh/getGuaka/Env)
+[![Platform](https://img.shields.io/badge/platform-osx-lightgrey.svg)](https://travis-ci.org/getGuaka/Env)
+[![Language: Swift](https://img.shields.io/badge/language-swift-orange.svg)](https://travis-ci.org/getGuaka/Env)
 [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
 ## Why?
 
-If you are developing cross platform command line apps, you need an easy way to interact with the Environment variables. `Env` provides just that.
+If you are developing cross platform command line apps, you need an easy way to interact with the environment variables. `Env` provides just that.
 
-You can use `Env` with [Guaka](https://github.com/oarrabi/Env) to create aweseome command line applications.
+You can use `Env` with [Guaka](https://github.com/nsomar/Guaka) to create aweseome command line applications.
 
 ## Usage
 
 ```swift
-// Set enviroment variable
+// Set an enviroment variable
 Env.set("key1", "value1")
 
-// Get environment variable
+// Get an environment variable
 Env.get("SomeKey")
 
 // Clear all variables
@@ -31,26 +31,26 @@ Env.values()
 ```
 
 ## Installation
-You can install Env using Swift package manager (SPM) and carthage
+You can install Env using Swift Package Manager (SPM) or Carthage.
 
 ### Swift Package Manager
-Add Env as dependency in your `Package.swift`
+Add Env as dependency in your `Package.swift`.
 
-```
-  import PackageDescription
+```swift
+import PackageDescription
 
-  let package = Package(name: "YourPackage",
+let package = Package(name: "YourPackage",
     dependencies: [
-      .Package(url: "https://github.com/oarrabi/Env.git", majorVersion: 0),
+        .package(url: "https://github.com/getGuaka/Env.git", from: "0.0.0"),
     ]
-  )
+)
 ```
 
 ### Carthage
-    github 'oarrabi/Env'
+    github "getGuaka/Env"
 
 ## Tests
-Tests can be found [here](https://github.com/oarrabi/Env/tree/master/Tests).
+Tests can be found [here](https://github.com/getGuaka/Env/tree/master/Tests).
 
 Run them with
 ```
