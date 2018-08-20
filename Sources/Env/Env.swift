@@ -13,7 +13,7 @@ public enum Env {
   public static var items: [String: String] {
 
     var items: [String: String] = [:]
-    guard var environCopy = environ else { return items }
+    guard var environCopy = Environ.environ else { return items }
 
     while true {
       let x = environCopy[0]
@@ -115,13 +115,13 @@ extension Env {
     let environmentStr = String(cString: environment)
 
     guard
-      let index = environmentStr.characters.index(of: "=")
+      let index = environmentStr.index(of: "=")
       else { return nil }
 
-    let key = environmentStr[environmentStr.startIndex..<index]
+    let key = String(environmentStr[environmentStr.startIndex..<index])
 
     let advanced = environmentStr.index(after: index)
-    let value = environmentStr[advanced..<environmentStr.endIndex]
+    let value = String(environmentStr[advanced..<environmentStr.endIndex])
     return (key, value)
   }
 

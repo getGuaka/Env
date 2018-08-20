@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Environ",
+        "repositoryURL": "https://github.com/nsomar/Environ.git",
+        "state": {
+          "branch": null,
+          "revision": "56a09672277606f71e0400f910c1c3e81b22407a",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
