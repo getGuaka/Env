@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Env",
     dependencies: [
-        .package(url: "https://github.com/nsomar/Environ.git", from: "0.0.0")
+        .package(url: "https://github.com/getGuaka/Environ.git", from: "0.0.0")
     ],
     targets: [
         .target(name:"Env"),

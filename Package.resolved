@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Environ",
-        "repositoryURL": "https://github.com/nsomar/Environ.git",
+        "repositoryURL": "https://github.com/getGuaka/Environ.git",
         "state": {
           "branch": null,
-          "revision": "56a09672277606f71e0400f910c1c3e81b22407a",
-          "version": "0.1.0"
+          "revision": "657ce127662f95b07c21a9377ad8f029057c39d4",
+          "version": "0.2.0"
         }
       }
     ]
