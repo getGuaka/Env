@@ -1,9 +1,9 @@
 # Env
 
-[![Build Status](https://travis-ci.org/getGuaka/Env.svg?branch=master)](https://travis-ci.org/getGuaka/Env)
+[![Build Status](https://travis-ci.com/getGuaka/Env.svg?branch=master)](https://travis-ci.com/getGuaka/Env)
 [![codecov](https://codecov.io/gh/getGuaka/Env/branch/master/graph/badge.svg)](https://codecov.io/gh/getGuaka/Env)
-[![Platform](https://img.shields.io/badge/platform-osx-lightgrey.svg)](https://travis-ci.org/getGuaka/Env)
-[![Language: Swift](https://img.shields.io/badge/language-swift-orange.svg)](https://travis-ci.org/getGuaka/Env)
+[![Platform](https://img.shields.io/badge/platform-osx-lightgrey.svg)](https://travis-ci.com/getGuaka/Env)
+[![Language: Swift](https://img.shields.io/badge/language-swift-orange.svg)](https://travis-ci.com/getGuaka/Env)
 [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
