@@ -4,7 +4,7 @@ osx_image: xcode9.4.1
 
 script:
 - swift package generate-xcodeproj --enable-code-coverage
-- xcodebuild -project Env.xcodeproj -scheme Env test
+- xcodebuild -project Env.xcodeproj -scheme Env-Package test
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
